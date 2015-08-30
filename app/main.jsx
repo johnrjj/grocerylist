@@ -4,5 +4,18 @@ console.log("Hello");
 
 var GroceryItemList = require('./components/GroceryItemList.jsx');
 
-// app is global because id
-React.render(<GroceryItemList />, app)
+var groceryItemStore = require('./stores/GroceryItemStore.jsx')
+
+//get initial items
+var currentItems = groceryItemStore.getItems();
+
+function render() {
+    React.render(<GroceryItemList items={currentItems}/>, app)
+}
+
+groceryItemStore.onChange(function(items) {
+    currentItems = items;
+    render();
+})
+
+render();

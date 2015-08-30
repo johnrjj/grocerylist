@@ -12,6 +12,7 @@
     "browser-sync": "^2.8.2",
     "browserify": "^11.0.1",
     "express": "^4.13.3",
+    "guid": "0.0.12",
     "gulp": "^3.9.0",
     "gulp-live-server": "0.0.25",
     "react": "^0.13.3",
