@@ -23,10 +23,11 @@ describe('GroceryListAddItemUnitTests', function() {
         var button = TestUtils.findRenderedDOMComponentWithTag(
             itemAdder, 'button');
         var input = TestUtils.findRenderedDOMComponentWithTag(
-            itemAdder, 'button');
+            itemAdder, 'input');
         //Act
         //Assert
         expect(button.getDOMNode().textContent).toEqual(' Add Item ');
+        expect(input.getDOMNode().textContent).toEqual('');
     });
 
     it('User Input should update input state', function(){
