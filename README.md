@@ -2,7 +2,7 @@
 Playing with React
 
 How to:
-The usual - npm install, bower install, grunt serve, visit localhost:8008 and behold all the unstyled glory that is React.
+The usual - npm install, bower install, grunt serve, visit localhost:8008 and behold all my unstyled-page glory that is React.
 
 
 
