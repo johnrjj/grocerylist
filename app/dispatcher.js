@@ -2,7 +2,7 @@ var guid = require('guid');
 
 var listeners = {};
 
-// making my own dispatcher
+// making my own dispatcher, this project is about learning react, not flux
 module.exports = {
     register:function(callback) {
         console.log('Registering callback')

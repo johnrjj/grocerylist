@@ -32,7 +32,7 @@ function GroceryItemStore() {
     }
 
     function onChange(listener){
-        console.log(listener);
+        //registers listener to be sent items array when they change
         listeners.push(listener);
     };
 

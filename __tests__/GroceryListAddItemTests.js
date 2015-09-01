@@ -24,7 +24,7 @@ describe('GroceryListAddItemUnitTests', function() {
             itemAdder, 'button');
         var input = TestUtils.findRenderedDOMComponentWithTag(
             itemAdder, 'input');
-        //Act
+
         //Assert
         expect(button.getDOMNode().textContent).toEqual(' Add Item ');
         expect(input.getDOMNode().textContent).toEqual('');
@@ -37,7 +37,6 @@ describe('GroceryListAddItemUnitTests', function() {
         TestUtils.Simulate.change(input, { target: { value: 'Changed Value' } });
         //Assert
         expect(itemAdder.state.input).toBe('Changed Value');
-
     });
 
     it('Form submit should call addItem function', function() {
@@ -51,6 +50,5 @@ describe('GroceryListAddItemUnitTests', function() {
 
         //Assert
         expect(itemAdder.addItem.mock.calls.length, 1);
-
     });
 });

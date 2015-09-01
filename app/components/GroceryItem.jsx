@@ -5,7 +5,6 @@ module.exports = React.createClass({
 
     togglePurchased:function(e){
         e.preventDefault();
-
         if(this.props.item.purchased){
             action.unbuy(this.props.item);
         } else {
@@ -16,7 +15,6 @@ module.exports = React.createClass({
     delete:function(e){
         e.preventDefault();
         action.delete(this.props.item);
-
     },
 
     render:function(){
