@@ -1,9 +1,5 @@
 var React = require('react/addons');
-
-console.log("Hello");
-
 var GroceryItemList = require('./components/GroceryItemList.jsx');
-
 var groceryItemStore = require('./stores/GroceryItemStore.jsx')
 
 //get initial items

@@ -5,7 +5,7 @@ var listeners = {};
 // making my own dispatcher
 module.exports = {
     register:function(callback) {
-        console.log('registering callback')
+        console.log('Registering callback')
         var id = guid.raw();
         listeners[id] = callback;
         return id;
