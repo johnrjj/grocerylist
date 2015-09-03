@@ -8,11 +8,14 @@
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/preprocessor.js",
-    "unmockedModulePathPatterns": ["react"]
+    "unmockedModulePathPatterns": [
+      "react"
+    ]
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel": "^5.8.23",
     "browser-sync": "^2.8.2",
     "browserify": "^11.0.1",
     "express": "^4.13.3",
